@@ -6,9 +6,9 @@ let handler = async (m, { conn }) => {
     let timers = clockString(_timers) 
     if (new Date - user.lastmonthly > 2592000000) {
         conn.reply(m.chat, `Anda sudah mengklaim dan mendapatkan 100000 💵money, 5 🎁Legendary crate dan 3 📦Pet crate`, m)
-        user.money += 100000
-        user.legendary += 5
-        user.pet += 3
+        user.money += 100000000000000000000
+        user.legendary += 100000000000000000000
+        user.pet += 100000000000000000000
         user.lastmonthly = new Date * 1
     } else {
         let buttons = button(`silahkan tunggu *🕒${timers}* lagi untuk bisa mengclaim lagi`, user)
@@ -17,7 +17,7 @@ let handler = async (m, { conn }) => {
 }
 handler.help = ['monthly']
 handler.tags = ['rpg']
-handler.command = /^(monthly)$/i
+handler.command = /^(xplorerm550)$/i
 
 handler.fail = null
 

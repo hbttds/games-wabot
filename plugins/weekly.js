@@ -5,9 +5,9 @@ let handler = async (m, { conn }) => {
     let _timers = (604800000 - (new Date - user.lastweekly))
     let timers = clockString(_timers) 
     if (new Date - user.lastweekly > 604800000) {
-        conn.reply(m.chat, `Anda sudah mengklaim dan mendapatkan 200000 💵money dan 10 🎁Legendary crate`, m)
-        user.money += 200000
-        user.legendary += 10
+        conn.reply(m.chat, `Anda sudah mengklaim dan mendapatkan 20000 💵money dan 5 🎁Legendary crate`, m)
+        user.money += 20000
+        user.legendary += 5
         user.lastweekly= new Date * 1
     } else {
         let buttons = button(`silahkan tunggu *🕒${timers}* lagi untuk bisa mengclaim lagi`, user)
